@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Your Stay | Valparai Homestay</title>
+
+<link rel="stylesheet" href="book.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+<div class="booking-box">
+
+<h1>Book Your Stay</h1>
+
+<p>Reserve your peaceful stay at Valparai Homestay.</p>
+
+<form id="bookingForm">
+
+<div class="input-box">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Mobile Number</label>
+
+<input
+type="tel"
+id="phone"
+maxlength="10"
+placeholder="Enter mobile number"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Email</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter email">
+
+</div>
+
+<div class="input-box">
+
+<label>Address</label>
+
+<textarea
+id="address"
+rows="4"
+placeholder="Enter your address"
+required></textarea>
+
+</div>
+
+<div class="row">
+
+<div class="input-box">
+
+<label>Guests</label>
+
+<input
+type="number"
+id="guests"
+min="1"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Rooms</label>
+
+<input
+type="number"
+id="rooms"
+min="1"
+required>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-box">
+
+<label>Check-In Date</label>
+
+<input
+type="date"
+id="checkinDate"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Check-In Time</label>
+
+<input
+type="time"
+id="checkinTime"
+required>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-box">
+
+<label>Check-Out Date</label>
+
+<input
+type="date"
+id="checkoutDate"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Check-Out Time</label>
+
+<input
+type="time"
+id="checkoutTime"
+required>
+
+</div>
+
+</div>
+
+<div class="input-box">
+
+<label>Special Request</label>
+
+<textarea
+id="request"
+rows="3"
+placeholder="Optional"></textarea>
+
+</div>
+
+<div class="checkbox">
+
+<input
+type="checkbox"
+id="agree"
+required>
+
+<label for="agree">
+
+I confirm that the above information is correct.
+
+</label>
+
+</div>
+
+<button
+type="submit"
+class="book-btn">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Book Now
+
+</button>
+
+<p id="successMessage"></p>
+
+</form>
+
+</div>
+
+</div>
+<script type="module" src="book.js"></script>
+
+</body>
+
+</html>

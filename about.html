@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Valparai Homestay</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <img src="logo.png" alt="Valparai Homestay Logo">
+           <div class="logo-text">
+
+                <h2>VALPARAI</h2>
+
+                <span>HOMESTAY</span>
+
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+ <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <!-- Overlay for mobile menu -->
+<div class="nav-overlay" id="navOverlay"></div>
+    </header>
+    </header>
+
+
+
+
+<!-- Floating Leaves -->
+<div class="leaves">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div> 
+
+
+    <!-- ================= ABOUT CONTENT ================= -->
+
+    <section class="about-content">
+        <!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-choose">
+
+    <div class="section-heading">
+
+        <h5>WHY CHOOSE US</h5>
+
+        <h2>Why Choose Valparai Homestay?</h2>
+
+        <p>
+            Enjoy a peaceful stay surrounded by nature, comfort, and warm hospitality.
+        </p>
+
+    </div>
+
+    <div class="choose-container">
+
+        <div class="choose-card">
+
+            <section class="why-us">
+
+
+    <div class="features">
+
+        <div class="feature-card">
+            <div class="icon">🌿</div>
+            <h3>Tea Estate View</h3>
+            <p>Wake up to beautiful green tea plantations and refreshing mountain scenery.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon">🏡</div>
+            <h3>Comfortable Rooms</h3>
+            <p>Clean, spacious and family-friendly rooms for a relaxing stay.</p>
+        </div>
+
+     <div class="feature-card">
+    <div class="icon">👨‍👩‍👧‍👦</div>
+    <h3>Family Friendly</h3>
+    <p>A comfortable and welcoming place for families, couples, and groups to relax together.</p>
+</div>
+
+        <div class="feature-card">
+            <div class="icon">🌄</div>
+            <h3>Peaceful Atmosphere</h3>
+            <p>Escape the city and experience the calm beauty of Valparai.</p>
+        </div>
+
+    </div>
+
+</section>
+<script>
+    // Mobile Menu Toggle
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('nav');
+
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+        });
+    });
+</script>  
+</body>
+
+</html>

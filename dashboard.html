@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Valparai Homestay</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+<header>
+
+    <div class="logo">
+
+        <h1>🏡 Valparai Homestay</h1>
+        <p>Admin Dashboard</p>
+
+    </div>
+
+    <button id="logoutBtn">
+        Logout
+    </button>
+
+</header>
+
+
+<!-- Booking Table -->
+
+<section class="table-section">
+
+<h2>Customer Bookings</h2>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+<th>Phone</th>
+<th>Guests</th>
+<th>Address</th>
+<th>Check-In</th>
+<th>Check-Out</th>
+<th>Status</th>
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="bookingTable">
+
+<!-- Firebase data will appear here -->
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+</div>
+
+<script type="module" src="dashboard.js"></script>
+
+</body>
+
+</html>

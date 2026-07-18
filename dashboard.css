@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:url("1779248917983.png") center center/cover no-repeat fixed;
+    min-height:100vh;
+}
+
+.overlay{
+    min-height:100vh;
+    background:rgba(0,0,0,0.60);
+    padding:30px;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    color:#fff;
+}
+
+.logo h1{
+    font-size:32px;
+}
+
+.logo p{
+    opacity:.9;
+}
+
+#logoutBtn{
+    background:#d62828;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+#logoutBtn:hover{
+    background:#b51f1f;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.card{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:15px;
+    padding:25px;
+    color:white;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card h2{
+    font-size:38px;
+}
+
+.table-section{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+    border-radius:15px;
+    padding:25px;
+}
+
+.table-section h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:900px;
+}
+
+th,td{
+    padding:15px;
+    text-align:center;
+    color:white;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+th{
+    background:rgba(255,255,255,.18);
+}
+
+.pending{
+    color:#ffd43b;
+    font-weight:bold;
+}
+
+.confirmed{
+    color:#38d66b;
+    font-weight:bold;
+}
+
+.rejected{
+    color:#ff5c5c;
+    font-weight:bold;
+}
+
+.action-btn{
+    padding:8px 12px;
+    margin:2px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    color:white;
+}
+
+.accept{
+    background:#2e7d32;
+}
+
+.reject{
+    background:#c62828;
+}
+
+.delete{
+    background:#616161;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+}
+
+.logo h1{
+    font-size:24px;
+}
+
+}

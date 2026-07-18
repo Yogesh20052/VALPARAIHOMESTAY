@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore | Valparai Homestay</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <img src="logo.png"alt="Logo">
+
+       <div class="logo-text">
+
+                <h2>VALPARAI</h2>
+
+                <span>HOMESTAY</span>
+
+</div>
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="rooms.html">Rooms</a></li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+ <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <!-- Overlay for mobile menu -->
+<div class="nav-overlay" id="navOverlay"></div>
+
+</header>
+<!-- Floating Leaves -->
+<div class="leaves">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div> 
+<!-- ================= TOUR LIST ================= -->
+
+<section class="tour-section">
+
+    <div class="tour-title">
+
+        <span>EXPLORE</span>
+
+        <h2>Take a Virtual Tour</h2>
+
+        <p>
+            Click any place below to view photos and details.
+        </p>
+
+    </div>
+
+</section>
+<!-- ================= TOUR ACCORDION ================= -->
+
+<section class="tour-list">
+
+    <!-- Homestay -->
+
+    <div class="tour-item">
+
+        <button class="tour-btn">
+
+            <span>🏡 Homestay</span>
+
+            <span class="arrow">+</span>
+
+        </button>
+
+        <div class="tour-content">
+
+            <img src="1779248917983.png"
+              alt="Homestay"
+               class="popup-image">
+            <h3>Welcome to Valparai Homestay</h3>
+
+            <p>
+                Enjoy a peaceful stay surrounded by lush tea estates,
+                fresh mountain air and beautiful nature.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Bedroom 1 -->
+
+    <div class="tour-item">
+
+        <button class="tour-btn">
+
+            <span>🛏 Bedroom 1</span>
+
+            <span class="arrow">+</span>
+
+        </button>
+
+        <div class="tour-content">
+
+            <img src="IMG-20260716-WA0010.jpg"
+            alt="Bedroom 1"
+             class="popup-image">
+
+            <h3>Bedroom 1</h3>
+
+            <p>
+                Spacious family bedroom with comfortable beds and peaceful atmosphere.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Bedroom 2 -->
+
+    <div class="tour-item">
+
+        <button class="tour-btn">
+
+            <span>🛏 Bedroom 2</span>
+
+            <span class="arrow">+</span>
+
+        </button>
+
+        <div class="tour-content">
+
+            <img src="IMG-20260716-WA0011.jpg"
+            alt="Bedroom 2"
+             class="popup-image">
+
+            <h3>Bedroom 2</h3>
+
+            <p>
+                Clean and spacious room perfect for families and groups.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Bathroom -->
+
+    <div class="tour-item">
+
+        <button class="tour-btn">
+
+            <span>🚿 Bathroom</span>
+
+            <span class="arrow">+</span>
+
+        </button>
+
+        <div class="tour-content">
+
+            <img src="IMG-20260716-WA0009.jpg"
+            alt="Bathroom"
+             class="popup-image">
+
+            <h3>Bathroom</h3>
+
+            <p>
+                Clean bathroom with hot water available throughout your stay.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Dining Room -->
+
+    <div class="tour-item">
+
+        <button class="tour-btn">
+
+            <span>🍽 Dining Room</span>
+
+            <span class="arrow">+</span>
+
+        </button>
+
+        <div class="tour-content">
+
+            <img src="IMG-20260716-WA0012.jpg" 
+            alt="Dining Room"
+             class="popup-image">
+
+            <h3>Dining Room</h3>
+
+            <p>
+                Spacious dining area where families can enjoy meals together.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<div id="imagePopup" class="image-popup">
+
+    <span class="close-popup">&times;</span>
+
+    <img id="popupImg">
+
+</div>
+<script>
+
+const items = document.querySelectorAll(".tour-item");
+
+items.forEach(item=>{
+
+    const btn = item.querySelector(".tour-btn");
+
+    btn.addEventListener("click",()=>{
+
+        items.forEach(other=>{
+
+            if(other!==item){
+
+                other.classList.remove("active");
+
+            }
+
+        });
+
+        item.classList.toggle("active");
+
+    });
+
+});
+
+const popup = document.getElementById("imagePopup");
+const popupImg = document.getElementById("popupImg");
+
+document.querySelectorAll(".popup-image").forEach(image => {
+
+    image.addEventListener("click", function(){
+
+        popup.style.display = "flex";
+
+        popupImg.src = this.src;
+
+    });
+
+});
+
+document.querySelector(".close-popup").addEventListener("click", function(){
+
+    popup.style.display = "none";
+
+});
+
+popup.addEventListener("click", function(e){
+
+    if(e.target === popup){
+
+        popup.style.display = "none";
+
+    }
+
+});
+ 
+    // Mobile Menu Toggle
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('nav');
+
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+        });
+    });
+
+</script>
+</body>
+
+</html>

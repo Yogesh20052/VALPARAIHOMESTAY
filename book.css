@@ -1,0 +1,381 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+
+    min-height:100vh;
+
+    background:url("1779248917983.png") center center/cover no-repeat fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+
+    padding:40px 20px;
+
+}
+
+/* ==========================
+   DARK OVERLAY
+========================== */
+
+.overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    z-index:1;
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:100%;
+    max-width:900px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ==========================
+   GLASS CARD
+========================== */
+
+.booking-box{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    color:#fff;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.booking-box h1{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+.booking-box p{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    opacity:.9;
+
+}
+
+/* ==========================
+   LABEL
+========================== */
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   INPUT
+========================== */
+
+.input-box{
+
+    margin-bottom:22px;
+
+    width:100%;
+
+}
+
+.input-box input,
+.input-box textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+   TWO COLUMN
+========================== */
+
+.row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+/* ==========================
+   CHECKBOX
+========================== */
+
+.checkbox{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:25px 0;
+
+}
+
+.checkbox input{
+
+    width:20px;
+
+    height:20px;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.book-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2e8b57;
+
+    color:#fff;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.book-btn:hover{
+
+    background:#236b44;
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================
+   SUCCESS MESSAGE
+========================== */
+
+#successMessage{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   POPUP
+========================== */
+
+.popup-overlay{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.6);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+
+}
+
+.popup-overlay.active{
+
+    display:flex;
+
+}
+
+.popup-box{
+
+    background:#fff;
+
+    width:420px;
+
+    max-width:90%;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    animation:popup .35s ease;
+
+}
+
+.popup-box i{
+
+    font-size:70px;
+
+    color:#2e8b57;
+
+    margin-bottom:15px;
+
+}
+
+.popup-box h2{
+
+    color:#222;
+
+    margin-bottom:10px;
+
+}
+
+.popup-box p{
+
+    color:#555;
+
+}
+
+.popup-btn{
+
+    margin-top:25px;
+
+    background:#2e8b57;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px 30px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+@keyframes popup{
+
+from{
+
+transform:scale(.7);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.booking-box{
+
+padding:25px;
+
+}
+
+.booking-box h1{
+
+font-size:30px;
+
+}
+
+.row{
+
+grid-template-columns:1fr;
+
+gap:0;
+
+}
+
+body{
+
+padding:20px;
+
+}
+
+}

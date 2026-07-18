@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Valparai Homestay</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+<!-- Floating Leaves -->
+<div class="leaves">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div> 
+<div class="logo">
+
+<img src="logo.png" alt="Logo">
+
+<div class="logo-text">
+
+                <h2>VALPARAI</h2>
+
+                <span>HOMESTAY</span>
+
+</div>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+ <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+     <!-- Overlay for mobile menu -->
+<div class="nav-overlay" id="navOverlay"></div>
+
+</header>
+<!--================ CONTACT HERO ================-->
+
+<section class="contact-hero">
+
+    <div class="mist"></div>
+    <div class="mist mist2"></div>
+
+    <div class="hero-text">
+
+        <span>VALPARAI HOMESTAY</span>
+
+        <h1>Let's Plan Your Peaceful Stay</h1>
+
+        <p>
+            Escape the busy city life and experience the beauty,
+            comfort, and peace of Valparai.
+        </p>
+
+        <a href="#journey" class="scroll-btn">
+
+            Start the Journey ↓
+
+        </a>
+
+    </div>
+
+</section>
+<!--================ JOURNEY SECTION ================-->
+
+<section class="journey" id="journey">
+
+    <div class="journey-title">
+
+        <span>WELCOME</span>
+
+        <h2>Your Journey Starts Here</h2>
+
+        <p>
+            Every great journey begins with a simple conversation.
+            Reach us anytime and we'll be happy to welcome you.
+        </p>
+
+    </div>
+
+    <div class="timeline">
+
+        <!-- Address -->
+
+        <div class="timeline-item">
+
+            <div class="circle">📍</div>
+
+            <div class="content">
+
+                <h3>Our Location</h3>
+
+                <p>Anna nagar, Nadumalai road</p>
+                    <p>Valparai, Coimbatore District, Tamil Nadu</p>
+
+            </div>
+
+        </div>
+
+        <!-- Phone -->
+
+        <div class="timeline-item">
+
+            <div class="circle">📞</div>
+
+            <div class="content">
+
+                <h3>Call Us</h3>
+
+                <p>+91 82485 17526</p>
+                <p>+91 73958 30143</p>
+
+            </div>
+
+        </div>
+
+        <!-- Email -->
+
+        <div class="timeline-item">
+
+            <div class="circle">📧</div>
+
+            <div class="content">
+
+                <h3>Email</h3>
+
+                <p>bmsyogeshwaran@gmail.com</p>
+
+            </div>
+
+        </div>
+
+        <!-- Timing -->
+
+        <div class="timeline-item">
+
+            <div class="circle">🕒</div>
+
+            <div class="content">
+
+                <h3>Check In / Check Out</h3>
+
+                <p>12:00 PM / 11:00 AM</p>
+
+            </div>
+
+        </div>
+
+    </div>
+<!--================ FIND US SECTION ================-->
+
+<section class="find-us">
+
+    <div class="find-title">
+
+        <span>LOCATION</span>
+
+        <h2>Find Us in the Heart of Valparai</h2>
+
+        <p>
+            Surrounded by beautiful tea estates and peaceful hills,
+            Valparai Homestay is easy to reach and perfect for a relaxing getaway.
+        </p>
+
+    </div>
+
+    <div class="map-box">
+
+        <iframe
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18380.650371044896!2d76.95485666644365!3d10.321638106289758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0789300936121b%3A0xf84f588dfa70ef!2sValparai%20homestay!5e1!3m2!1sen!2sin!4v1783862759004!5m2!1sen!2sin" 
+            width="400" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="0" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </iframe>
+
+    </div>
+<!--================ THANK YOU ================-->
+
+<section class="thanks">
+
+    <h2>♥️</h2>
+
+    <p>
+        Thank you for visiting our website.
+        We hope to make your stay in Valparai peaceful,
+        comfortable and memorable.
+    </p>
+
+</section>
+</section>
+</section>
+<script>
+    // Mobile Menu Toggle
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('nav');
+
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+        });
+    });
+</script>  
+</body>
+</html>
