@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // When OK is clicked, go to the home page
 popupCloseBtn.addEventListener("click", () => {
-    window.location.href = "INDEX.html";
+    window.location.href = "index.html";
 });
     // ===============================
     // TODAY DATE
